@@ -12,7 +12,8 @@ const isValidSolana = a => SOLANA_RE.test((a||"").trim());
 // ── Helius RPC endpoint ──
 // Vercel deployment: VITE_HELIUS_RPC_URL environment variable is injected at build time
 // Artifact preview: empty string (shows setup instructions)
-import.meta.env.VITE_HELIUS_RPC_URL || ""
+const HELIUS_RPC = "https://mainnet.helius-rpc.com/?api-key=1638de1b-b8f1-4b4b-b086-396705b0355d";
+
 
 
 const DC = { LOW:"#22c55e", MEDIUM:"#f97316", HIGH:"#ef4444", CRITICAL:"#dc2626", EXISTENTIAL:"#ff1a1a" };
